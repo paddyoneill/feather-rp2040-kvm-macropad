@@ -28,6 +28,9 @@ while True:
             pin_idx = key_pin_array.index(key_pin)
             led.value = True
 
+            while not key_pin.value:
+                pass
+
             if pin_idx == 0:
                 keyboard.press(Keycode.SCROLL_LOCK)
                 keyboard.release_all()
