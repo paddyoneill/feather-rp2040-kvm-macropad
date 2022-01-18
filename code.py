@@ -6,7 +6,7 @@ from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
 from adafruit_hid.keycode import Keycode
 
-key_switch_pins = [board.A0]
+key_switch_pins = [board.A0, board.A1, board.A2, board.A3]
 key_pin_array = []
 
 time.sleep(1)
@@ -37,6 +37,37 @@ while True:
                 keyboard.press(Keycode.SCROLL_LOCK)
                 keyboard.release_all()
                 keyboard.press(Keycode.ONE)
+                keyboard.release_all()
+                keyboard.press(Keycode.ENTER)
+                keyboard.release_all()
+            if pin_idx == 1:
+                keyboard.press(Keycode.SCROLL_LOCK)
+                keyboard.release_all()
+                keyboard.press(Keycode.SCROLL_LOCK)
+                keyboard.release_all()
+                keyboard.press(Keycode.TWO)
+                keyboard.release_all()
+                keyboard.press(Keycode.ENTER)
+                keyboard.release_all()
+            if pin_idx == 2:
+                keyboard.press(Keycode.SCROLL_LOCK)
+                keyboard.release_all()
+                keyboard.press(Keycode.SCROLL_LOCK)
+                keyboard.release_all()
+                keyboard.press(Keycode.ONE)
+                keyboard.release_all()
+                keyboard.press(Keycode.U)
+                keyboard.release_all()
+                keyboard.press(Keycode.ENTER)
+                keyboard.release_all()
+            if pin_idx == 3:
+                keyboard.press(Keycode.SCROLL_LOCK)
+                keyboard.release_all()
+                keyboard.press(Keycode.SCROLL_LOCK)
+                keyboard.release_all()
+                keyboard.press(Keycode.TWO)
+                keyboard.release_all()
+                keyboard.press(Keycode.U)
                 keyboard.release_all()
                 keyboard.press(Keycode.ENTER)
                 keyboard.release_all()
