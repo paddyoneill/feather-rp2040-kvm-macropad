@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Kailh_Speed_Gold
+D Kailh Speed Gold mechanical keyboard switch
+F https://github.com/keyboardio/keyswitch_documentation/blob/master/datasheets/Kailh/CPG151101D211-Speed-Gold.pdf
+$ENDCMP
+#
 #End Doc Library
