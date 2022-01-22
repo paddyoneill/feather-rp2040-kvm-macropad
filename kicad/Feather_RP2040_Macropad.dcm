@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Adafruit_Feather_RP2040
+F https://cdn-learn.adafruit.com/downloads/pdf/adafruit-feather-rp2040-pico.pdf
+$ENDCMP
+#
 $CMP Kailh_Speed_Gold
 D Kailh Speed Gold mechanical keyboard switch
 F https://github.com/keyboardio/keyswitch_documentation/blob/master/datasheets/Kailh/CPG151101D211-Speed-Gold.pdf
